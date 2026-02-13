@@ -1,0 +1,13 @@
+# Prometheus configuration file for scraping metrics
+
+# Global configuration
+global:
+  scrape_interval: 15s  # Set the default scrape interval to every 15 seconds
+
+# Scraping configuration
+scrape_configs:
+  # Scrape metrics from the WiFi API service
+  - job_name: 'wifi_api'
+    static_configs:
+      - targets: ['<WIFI_API_SERVICE_HOST>:<PORT>']  # Replace with your WiFi API service host and port
+        # Example: targets: ['localhost:8080']
