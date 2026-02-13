@@ -1,0 +1,10 @@
+FastAPI
+uvicorn
+SQLAlchemy
+psycopg2-binary
+PyJWT
+python-dotenv
+alembic
+Redis
+prometheus-client
+aiofiles
